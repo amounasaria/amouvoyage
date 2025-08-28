@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Amou Voyage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #3498db;
+            margin-bottom: 30px;
+        }
+        
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo-preview {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-preview:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-svg {
+            width: 80%;
+            height: 80%;
+        }
+        
+        .logo-1 {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+        }
+        
+        .logo-2 {
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+        }
+        
+        .logo-3 {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+        }
+        
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .color {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .color-1 {
+            background: #3498db;
+        }
+        
+        .color-2 {
+            background: #e67e22;
+        }
+        
+        .color-3 {
+            background: #2ecc71;
+        }
+        
+        .download-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+        }
+        
+        .download-btn:hover {
+            background: #2980b9;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .instructions h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .color-palette {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Logo pour Amou Voyage</h1>
+        
+        <div class="logo-container">
+            <div class="logo">
+                <div class="logo-preview logo-1">
+                    <svg class="logo-svg" viewBox="0 0 100 100">
+                        <path d="M50 15 L75 50 L50 85 L25 50 Z" fill="white" />
+                        <circle cx="50" cy="50" r="15" fill="#3498db" />
+                        <path d="M40 40 L60 40 L60 60 L40 60 Z" fill="white" />
+                    </svg>
+                </div>
+                <button class="download-btn" onclick="downloadLogo(1)">Télécharger</button>
+            </div>
+            
+            <div class="logo">
+                <div class="logo-preview logo-2">
+                    <svg class="logo-svg" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" fill="white" />
+                        <path d="M30 30 C50 10 70 10 70 30 C70 50 50 70 30 50 C30 40 30 30 30 30" fill="#e67e22" />
+                        <path d="M40 40 L60 40 L60 60 L40 60 Z" fill="white" />
+                    </svg>
+                </div>
+                <button class="download-btn" onclick="downloadLogo(2)">Télécharger</button>
+            </div>
+            
+            <div class="logo">
+                <div class="logo-preview logo-3">
+                    <svg class="logo-svg" viewBox="0 0 100 100">
+                        <path d="M50 15 L85 50 L50 85 L15 50 Z" fill="white" />
+                        <path d="M35 35 L65 35 L65 65 L35 65 Z" fill="#2ecc71" />
+                        <circle cx="50" cy="50" r="10" fill="white" />
+                    </svg>
+                </div>
+                <button class="download-btn" onclick="downloadLogo(3)">Télécharger</button>
+            </div>
+        </div>
+        
+        <h2>Palette de couleurs</h2>
+        <div class="color-palette">
+            <div class="color color-1">#3498db<br>Bleu Primaire</div>
+            <div class="color color-2">#e67e22<br>Orange Secondaire</div>
+            <div class="color color-3">#2ecc71<br>Vert Accent</div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Comment télécharger le logo :</h3>
+            <ol>
+                <li>Choisissez le logo qui vous plaît le plus parmi les trois options</li>
+                <li>Cliquez sur le bouton "Télécharger" sous le logo</li>
+                <li>L'image sera téléchargée au format PNG</li>
+                <li>Vous pouvez ensuite utiliser ce logo pour vos documents, cartes de visite, en-têtes, etc.</li>
+            </ol>
+            
+            <p><strong>Conseil :</strong> Le logo 1 (bleu) est le plus polyvalent et fonctionne bien sur la plupart des supports.</p>
+        </div>
+    </div>
+
+    <script>
+        function downloadLogo(logoNumber) {
+            // Créer un canvas pour exporter le logo
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 1000;
+            canvas.height = 1000;
+            
+            // Définir la couleur de fond selon le logo
+            if (logoNumber === 1) {
+                ctx.fillStyle = '#3498db';
+            } else if (logoNumber === 2) {
+                ctx.fillStyle = '#e67e22';
+            } else {
+                ctx.fillStyle = '#2ecc71';
+            }
+            
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Dessiner le logo selon le numéro
+            ctx.fillStyle = 'white';
+            if (logoNumber === 1) {
+                // Logo 1
+                ctx.beginPath();
+                ctx.moveTo(500, 150);
+                ctx.lineTo(750, 500);
+                ctx.lineTo(500, 850);
+                ctx.lineTo(250, 500);
+                ctx.closePath();
+                ctx.fill();
+                
+                ctx.fillStyle = '#3498db';
+                ctx.beginPath();
+                ctx.arc(500, 500, 150, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.fillStyle = 'white';
+                ctx.fillRect(400, 400, 200, 200);
+            } else if (logoNumber === 2) {
+                // Logo 2
+                ctx.beginPath();
+                ctx.arc(500, 500, 400, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.fillStyle = '#e67e22';
+                ctx.beginPath();
+                ctx.moveTo(300, 300);
+                ctx.bezierCurveTo(500, 100, 700, 100, 700, 300);
+                ctx.bezierCurveTo(700, 500, 500, 700, 300, 500);
+                ctx.bezierCurveTo(300, 400, 300, 300, 300, 300);
+                ctx.fill();
+                
+                ctx.fillStyle = 'white';
+                ctx.fillRect(400, 400, 200, 200);
+            } else {
+                // Logo 3
+                ctx.beginPath();
+                ctx.moveTo(500, 150);
+                ctx.lineTo(850, 500);
+                ctx.lineTo(500, 850);
+                ctx.lineTo(150, 500);
+                ctx.closePath();
+                ctx.fill();
+                
+                ctx.fillStyle = '#2ecc71';
+                ctx.fillRect(350, 350, 300, 300);
+                
+                ctx.fillStyle = 'white';
+                ctx.beginPath();
+                ctx.arc(500, 500, 100, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            // Créer un lien de téléchargement
+            const link = document.createElement('a');
+            link.download = `amou-voyage-logo-${logoNumber}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
